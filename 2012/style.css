@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  body div {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .ecce_homo_01 img {
+    position: absolute;
+    left: 40vw;
+    top: 30vh;
+    width: 300px;
+  }
+  
+  h1 {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    font-size: 200px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .A_body-text-01 {
+    text-align: justify;
+    position: absolute;
+    left: 230px;
+    top: 250px;
+    width: 250px;
+    height: 210px;
+  }
+  
+  .A_body-text-02 {
+    text-align: justify;
+    position: absolute;
+    left: 230px;
+    top: 430px;
+    width: 250px;
+    height: 210px;
+  }
+  
+  .A_body-text-03 {
+    text-align: justify;
+    position: absolute;
+    right: 240px;
+    top: 280px;
+    width: 250px;
+    height: 455px;
+  }
+  
+  .year {
+    position: absolute;
+    line-height: 130px;
+    bottom: 10vh;
+    font-size: 130px;
+    margin-left: 20px;
+  }
+  
