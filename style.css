@@ -22,11 +22,11 @@ body div {
 }
 
 h1 {
+  display: flex;
   font-family: Helvetica, sans-serif;
-  width: 1527px;
-  height: 322px;
   font-size: 200px;
   text-align: center;
+  justify-content: center;
 }
 
 .A_body-text-01 {
@@ -59,7 +59,7 @@ h1 {
 .year {
   position: absolute;
   line-height: 130px;
-  bottom: 70px;
+  bottom: 10vh;
   font-size: 130px;
   margin-left: 20px;
 }
