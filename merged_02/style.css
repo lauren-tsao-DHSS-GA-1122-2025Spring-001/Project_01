@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Fungal-Grow0Thickness500";
+  src: url("../fonts/Fungal-Grow0Thickness500.woff");
+}
+
+@font-face {
+  font-family: "Fungal-Grow100Thickness1000";
+  src: url("../fonts/Fungal-Grow100Thickness1000.woff");
+}
+
+@font-face {
+  font-family: "Fungal-Grow400Thickness500";
+  src: url("../fonts/Fungal-Grow400Thickness500.woff");
+}
+
 * {
   margin: 0;
 }
@@ -11,8 +26,9 @@ body {
 
 h1 {
   display: flex;
-  font-family: "Funnel Display", sans-serif;
+  font-family: "Fungal-Grow100Thickness1000", sans-serif;
   font-size: 180px;
+  height: 260px;
   justify-content: center;
   color: grey;
   background-color: lightgrey;
@@ -20,7 +36,7 @@ h1 {
 
 .original-text, .A-text, .B-text {
   line-height: 23px;
-  font-family: "Funnel Display";
+  font-family: "Tomorrow";
 }
 
 .bg-color {
@@ -61,6 +77,10 @@ h1 {
   color: #535353;
 }
 
+ul li {
+  margin-top: 10px;
+}
+
 a {
   color: inherit;
 }
@@ -68,7 +88,7 @@ a {
 .original_body-text-01 {
   text-align: justify;
   position: absolute;
-  left: 230px;
+  left: 250px;
   top: 250px;
   width: 250px;
   height: 210px;
@@ -84,11 +104,11 @@ a {
 }
 
 .original_body-text-03 {
-  text-align: justify;
+  z-index: 1;
   position: absolute;
   right: 240px;
   top: 250px;
-  width: 250px;
+  width: 300px;
   height: 455px;
 }
 
@@ -132,7 +152,7 @@ a {
 .B_body-text-01 {
   text-align: justify;
   position: absolute;
-  left: 230px;
+  left: 290px;
   top: 250px;
   width: 250px;
   height: 210px;
@@ -142,7 +162,7 @@ a {
   text-align: justify;
   position: absolute;
   left: 230px;
-  top: 430px;
+  top: 445px;
   width: 250px;
   height: 210px;
 }
@@ -150,7 +170,7 @@ a {
 .B_body-text-03 {
   text-align: justify;
   position: absolute;
-  right: 240px;
+  right: 280px;
   top: 250px;
   width: 250px;
   height: 455px;
@@ -160,7 +180,7 @@ a {
   text-align: justify;
   position: absolute;
   right: 240px;
-  top: 430px;
+  top: 445px;
   width: 250px;
   height: 455px;
 }
@@ -196,6 +216,7 @@ body:has(.B-year:hover) .original-text {
 
   /* side-A animation */
 body:has(.A-year:hover) h1 {
+  font-family: "Fungal-Grow0Thickness500";
   color: black;
   background-color: white;
 }
@@ -218,6 +239,7 @@ body:has(.A-year:hover) .bg-color {
 
 /* side-B animation */
 body:has(.B-year:hover) h1 {
+  font-family: "Fungal-Grow400Thickness500";
   opacity: 100%;
   color: white;
   background-color: #151515;
