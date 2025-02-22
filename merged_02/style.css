@@ -6,8 +6,23 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  /* background-color: white; */
+  /* overflow: hidden; */
+}
+
+h1 {
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  font-size: 200px;
+  justify-content: center;
+  opacity: 30%;
+  background-color: white;
+}
+
+.bg-color {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
 }
 
 .ecce_homo_00 img {
@@ -15,29 +30,19 @@ body {
     left: 40%;
     top: 30%;
     width: 300px;
-    filter: grayscale(1);
-    opacity: 40%;
-  }
-
-  .side-original h1 {
-    color: grey;
-    display: flex;
-    font-family: Helvetica, sans-serif;
-    font-size: 200px;
-    justify-content: center;
   }
 
 .side-A {
     /* position: absolute; */
     width: 100%;
     height: 100%;;
-    background-color: white;
     opacity: 0%;
 }
 
 /* side-A animation */
 body:has(.A-year:hover) h1 {
   opacity: 100%;
+  background-color: white;
 }
 
 body:has(.A-year:hover) .side-A {
@@ -46,40 +51,36 @@ body:has(.A-year:hover) .side-A {
 
 body:has(.A-year:hover) .A-year {
   opacity: 100%;
-  /* width: 100%;
-  height: 100%;
-  left: 1.30%;
-  top: 15.30%; */
 }
 
 .side-B {
-  /* position: absolute; */
   width: 100%;
   height: 100%;;
-  background-color: white;
   opacity: 0%;
 }
 
 /* side-B animation */
 body:has(.B-year:hover) h1 {
   opacity: 100%;
+  color: white;
+  background-color: black;
 }
 
 body:has(.B-year:hover) .side-B {
   opacity: 100%;
+  color: white;
 }
 
 body:has(.B-year:hover) .ecce_homo_00 {
   opacity: 0%;
 }
 
-
 body:has(.B-year:hover) .B-year {
   opacity: 100%;
-  /* width: 100%;
-  height: 100%;
-  left: 1.30%;
-  top: 15.30%; */
+}
+
+body:has(.B-year:hover) .bg-color {
+  background-color: black;
 }
 
 .A_text {
@@ -102,14 +103,6 @@ body:has(.B-year:hover) .B-year {
   left: 40%;
   top: 30%;
   width: 300px;
-}
-
-h1 {
-  display: flex;
-  font-family: Helvetica, sans-serif;
-  font-size: 200px;
-  justify-content: center;
-  opacity: 30%;
 }
 
 .A_body-text-01 {
