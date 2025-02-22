@@ -6,23 +6,28 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 h1 {
   display: flex;
-  font-family: Helvetica, sans-serif;
-  font-size: 200px;
+  font-family: "Funnel Display", sans-serif;
+  font-size: 180px;
   justify-content: center;
-  opacity: 30%;
-  background-color: white;
+  color: grey;
+  background-color: lightgrey;
+}
+
+.original-text, .A-text, .B-text {
+  line-height: 23px;
+  font-family: "Funnel Display";
 }
 
 .bg-color {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: lightgrey;
 }
 
 .ecce_homo_00 img {
@@ -33,62 +38,9 @@ h1 {
   }
 
 .side-A {
-    /* position: absolute; */
     width: 100%;
     height: 100%;;
     opacity: 0%;
-}
-
-/* side-A animation */
-body:has(.A-year:hover) h1 {
-  opacity: 100%;
-  background-color: white;
-}
-
-body:has(.A-year:hover) .side-A {
-  opacity: 100%;
-}
-
-body:has(.A-year:hover) .A-year {
-  opacity: 100%;
-}
-
-.side-B {
-  width: 100%;
-  height: 100%;;
-  opacity: 0%;
-}
-
-/* side-B animation */
-body:has(.B-year:hover) h1 {
-  opacity: 100%;
-  color: white;
-  background-color: black;
-}
-
-body:has(.B-year:hover) .side-B {
-  opacity: 100%;
-  color: white;
-}
-
-body:has(.B-year:hover) .ecce_homo_00 {
-  opacity: 0%;
-}
-
-body:has(.B-year:hover) .B-year {
-  opacity: 100%;
-}
-
-body:has(.B-year:hover) .bg-color {
-  background-color: black;
-}
-
-.A_text {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  color: white;
-  mix-blend-mode: difference;
 }
 
 .ecce_homo_01 img {
@@ -103,6 +55,41 @@ body:has(.B-year:hover) .bg-color {
   left: 40%;
   top: 30%;
   width: 300px;
+}
+
+.original-text {
+  color: #535353;
+}
+
+a {
+  color: inherit;
+}
+
+.original_body-text-01 {
+  text-align: justify;
+  position: absolute;
+  left: 230px;
+  top: 250px;
+  width: 250px;
+  height: 210px;
+}
+
+.original_body-text-02 {
+  text-align: justify;
+  position: absolute;
+  left: 230px;
+  top: 430px;
+  width: 250px;
+  height: 210px;
+}
+
+.original_body-text-03 {
+  text-align: justify;
+  position: absolute;
+  right: 240px;
+  top: 250px;
+  width: 250px;
+  height: 455px;
 }
 
 .A_body-text-01 {
@@ -127,14 +114,14 @@ body:has(.B-year:hover) .bg-color {
   text-align: justify;
   position: absolute;
   right: 240px;
-  top: 280px;
+  top: 250px;
   width: 250px;
   height: 455px;
 }
 
 .A-year {
   opacity: 30%;
-  font-family: Helvetica, sans-serif;
+  font-family: "Funnel Display", sans-serif;
   position: absolute;
   line-height: 130px;
   bottom: 10%;
@@ -180,10 +167,81 @@ body:has(.B-year:hover) .bg-color {
 
 .B-year {
     opacity: 30%;
-    font-family: Helvetica, sans-serif;
+    font-family: "Funnel Display", sans-serif;
     position: absolute;
     line-height: 130px;
     right: 30px;
     bottom: 10%;
     font-size: 130px;
   }
+
+  .side-B {
+    width: 100%;
+    height: 100%;;
+    opacity: 0%;
+  }
+  
+
+/* ANIMATION */
+
+/* side-original animation */
+body:has(.A-year:hover) .original-text {
+  opacity: 0%;
+}
+
+body:has(.B-year:hover) .original-text {
+  opacity: 0%;
+}
+
+
+  /* side-A animation */
+body:has(.A-year:hover) h1 {
+  color: black;
+  background-color: white;
+}
+
+body:has(.A-year:hover) .side-A {
+  opacity: 100%;
+}
+
+body:has(.A-year:hover) .A-year {
+  opacity: 100%;
+}
+
+body:has(.A-year:hover) .ecce_homo_00 {
+  opacity: 0%;
+}
+
+body:has(.A-year:hover) .bg-color {
+  background-color: white;
+}
+
+/* side-B animation */
+body:has(.B-year:hover) h1 {
+  opacity: 100%;
+  color: white;
+  background-color: #151515;
+}
+
+body:has(.B-year:hover) .side-B {
+  opacity: 100%;
+  color: white;
+}
+
+body:has(.B-year:hover) .ecce_homo_00 {
+  opacity: 0%;
+}
+
+body:has(.B-year:hover) .B-year {
+  opacity: 100%;
+  color: white;
+}
+
+body:has(.B-year:hover) .bg-color {
+  background-color: #151515;
+}
+
+body:has(.B-year:hover) .A-year {
+  opacity: 30%;
+  color: white;
+}
