@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: "Fungal-Grow100Thickness1000";
-  src: url("../fonts/Fungal-Grow100Thickness1000.woff");
+  font-family: "Fungal-Grow100Thickness500";
+  src: url("../fonts/Fungal-Grow100Thickness500.woff");
 }
 
 @font-face {
@@ -26,8 +26,9 @@ body {
 
 h1 {
   display: flex;
-  font-family: "Fungal-Grow100Thickness1000", sans-serif;
+  font-family: "Fungal-Grow100Thickness500", sans-serif;
   font-size: 180px;
+  font-weight: 500;
   height: 260px;
   justify-content: center;
   color: grey;
