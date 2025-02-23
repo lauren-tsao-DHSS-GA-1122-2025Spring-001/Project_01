@@ -31,8 +31,8 @@ h1 {
   font-weight: 500;
   height: 260px;
   justify-content: center;
-  color: grey;
-  background-color: lightgrey;
+  color: #d1d1d1;
+  background-color: #363636;
 }
 
 .original-text, .A-text, .B-text {
@@ -44,7 +44,7 @@ h1 {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: lightgrey;
+  background-color: #363636;
 }
 
 .ecce_homo_00 img {
@@ -75,7 +75,7 @@ h1 {
 }
 
 .original-text {
-  color: #3d3d3d;
+  color: #d1d1d1;
 }
 
 ul li {
@@ -150,7 +150,7 @@ a {
 }
 
 .A-year {
-  opacity: 30%;
+  color: #d1d1d1;
   font-family: "Funnel Display", sans-serif;
   position: absolute;
   line-height: 130px;
@@ -196,7 +196,7 @@ a {
 }
 
 .B-year {
-    opacity: 30%;
+    color: #d1d1d1;
     font-family: "Funnel Display", sans-serif;
     position: absolute;
     line-height: 130px;
@@ -236,7 +236,12 @@ body:has(.A-year:hover) .side-A {
 }
 
 body:has(.A-year:hover) .A-year {
-  opacity: 100%;
+  color: black;
+}
+
+body:has(.A-year:hover) .B-year {
+  opacity: 20%;
+  color: #3d3d3d;
 }
 
 body:has(.A-year:hover) .ecce_homo_00 {
@@ -265,7 +270,6 @@ body:has(.B-year:hover) .ecce_homo_00 {
 }
 
 body:has(.B-year:hover) .B-year {
-  opacity: 100%;
   color: white;
 }
 
