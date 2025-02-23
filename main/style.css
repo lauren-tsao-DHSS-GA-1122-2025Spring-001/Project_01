@@ -1,3 +1,5 @@
+/* FONTS */
+/* Fungal font (credit - Fungal by Raphaël Bastide, Jérémy Landes. Distributed by velvetyne.fr.) */
 @font-face {
   font-family: "Fungal-Grow0Thickness500";
   src: url("../fonts/Fungal-Grow0Thickness500.woff");
@@ -12,7 +14,8 @@
   font-family: "Fungal-Grow400Thickness500";
   src: url("../fonts/Fungal-Grow400Thickness500.woff");
 }
-
+/* MODIFICATIONS */
+/* full page modifications */
 * {
   margin: 0;
 }
@@ -35,7 +38,9 @@ h1 {
   background-color: #363636;
 }
 
-.original-text, .A-text, .B-text {
+.original-text,
+.A-text,
+.B-text {
   line-height: 23px;
   font-family: "Tomorrow", monospace;
 }
@@ -47,17 +52,20 @@ h1 {
   background-color: #363636;
 }
 
-.ecce_homo_00 img {
-    position: absolute;
-    left: 40%;
-    top: 30%;
-    width: 300px;
-  }
+ul li {
+  margin-top: 20px;
+}
 
-.side-A {
-    width: 100%;
-    height: 100%;;
-    opacity: 0%;
+a {
+  color: inherit;
+}
+
+/* image modifications */
+.ecce_homo_00 img {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  width: 300px;
 }
 
 .ecce_homo_01 img {
@@ -74,16 +82,9 @@ h1 {
   width: 300px;
 }
 
+/* original-side modifications */
 .original-text {
   color: #d1d1d1;
-}
-
-ul li {
-  margin-top: 20px;
-}
-
-a {
-  color: inherit;
 }
 
 .original_body-text-01 {
@@ -120,6 +121,13 @@ a {
   top: 250px;
   width: 300px;
   height: 455px;
+}
+
+/* side-A modifications */
+.side-A {
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
 }
 
 .A_body-text-01 {
@@ -159,6 +167,7 @@ a {
   font-size: 130px;
 }
 
+/* side-B modifications */
 .B_body-text-01 {
   text-align: justify;
   position: absolute;
@@ -196,21 +205,20 @@ a {
 }
 
 .B-year {
-    color: #d1d1d1;
-    font-family: "Funnel Display", sans-serif;
-    position: absolute;
-    line-height: 130px;
-    right: 30px;
-    bottom: 10%;
-    font-size: 130px;
-  }
+  color: #d1d1d1;
+  font-family: "Funnel Display", sans-serif;
+  position: absolute;
+  line-height: 130px;
+  right: 30px;
+  bottom: 10%;
+  font-size: 130px;
+}
 
-  .side-B {
-    width: 100%;
-    height: 100%;;
-    opacity: 0%;
-  }
-  
+.side-B {
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+}
 
 /* ANIMATION */
 
@@ -223,8 +231,7 @@ body:has(.B-year:hover) .original-text {
   opacity: 0%;
 }
 
-
-  /* side-A animation */
+/* side-A animation */
 body:has(.A-year:hover) h1 {
   font-family: "Fungal-Grow0Thickness500";
   color: black;
