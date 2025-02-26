@@ -1,4 +1,4 @@
-# Project_01
+# Project 01 : Digital Translation
 
 ## Deliverables
 - Link to website: Please click [here](https://lauren-tsao-dhss-ga-1122-2025spring-001.github.io/Project_01/)
