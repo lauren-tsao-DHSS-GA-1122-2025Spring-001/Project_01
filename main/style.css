@@ -29,7 +29,7 @@ body {
 
 h1 {
   display: flex;
-  font-family: "Fungal-Grow100Thickness500", sans-serif;
+  font-family: "Fungal-Grow100Thickness500", Helvetica;
   font-size: 180px;
   font-weight: 500;
   height: 260px;
@@ -169,7 +169,7 @@ a {
 
 .A-year {
   color: #d1d1d1;
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Mono", Helvetica;
   position: absolute;
   line-height: 130px;
   bottom: 10%;
@@ -216,7 +216,7 @@ a {
 
 .B-year {
   color: #d1d1d1;
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Mono", Helvetica;
   position: absolute;
   line-height: 130px;
   right: 30px;
@@ -243,7 +243,7 @@ body:has(.B-year:hover) .original-text {
 
 /* side-A animation */
 body:has(.A-year:hover) h1 {
-  font-family: "Fungal-Grow0Thickness500";
+  font-family: "Fungal-Grow0Thickness500", Helvetica;
   color: black;
   background-color: white;
 }
@@ -271,7 +271,7 @@ body:has(.A-year:hover) .bg-color {
 
 /* side-B animation */
 body:has(.B-year:hover) h1 {
-  font-family: "Fungal-Grow400Thickness500";
+  font-family: "Fungal-Grow400Thickness500, Helvetica";
   opacity: 100%;
   color: white;
   background-color: #151515;
