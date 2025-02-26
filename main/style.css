@@ -42,7 +42,8 @@ h1 {
 .A-text,
 .B-text {
   line-height: 23px;
-  font-family: "Tomorrow", monospace;
+  font-family: "Fragment Mono", monospace;
+  font-size: 14px;
 }
 
 .bg-color {
@@ -90,9 +91,9 @@ a {
 .original_body-text-01 {
   text-align: justify;
   position: absolute;
-  left: 280px;
+  left: 200px;
   top: 250px;
-  width: 250px;
+  width: 330px;
   height: 210px;
 }
 
@@ -119,7 +120,7 @@ a {
   position: absolute;
   right: 240px;
   top: 250px;
-  width: 300px;
+  width: 330px;
   height: 455px;
 }
 
@@ -133,9 +134,9 @@ a {
 .A_body-text-01 {
   text-align: justify;
   position: absolute;
-  left: 280px;
+  left: 200px;
   top: 250px;
-  width: 250px;
+  width: 330px;
   height: 210px;
 }
 
@@ -151,15 +152,24 @@ a {
 .A_body-text-03 {
   text-align: justify;
   position: absolute;
-  right: 280px;
+  right: 270px;
   top: 250px;
-  width: 250px;
+  width: 260px;
+  height: 455px;
+}
+
+.A_body-text-04 {
+  text-align: justify;
+  position: absolute;
+  right: 210px;
+  top: 480px;
+  width: 320px;
   height: 455px;
 }
 
 .A-year {
   color: #d1d1d1;
-  font-family: "Funnel Display", sans-serif;
+  font-family: "Space Mono", sans-serif;
   position: absolute;
   line-height: 130px;
   bottom: 10%;
@@ -171,42 +181,42 @@ a {
 .B_body-text-01 {
   text-align: justify;
   position: absolute;
-  left: 280px;
-  top: 250px;
-  width: 250px;
+  left: 200px;
+  top: 270px;
+  width: 310px;
   height: 210px;
 }
 
 .B_body-text-02 {
   text-align: justify;
   position: absolute;
-  left: 280px;
-  top: 445px;
-  width: 250px;
+  left: 250px;
+  top: 430px;
+  width: 300px;
   height: 210px;
 }
 
 .B_body-text-03 {
   text-align: justify;
   position: absolute;
-  right: 280px;
-  top: 250px;
-  width: 250px;
+  right: 240px;
+  top: 270px;
+  width: 320px;
   height: 455px;
 }
 
 .B_body-text-04 {
   text-align: justify;
   position: absolute;
-  right: 280px;
-  top: 445px;
-  width: 250px;
+  right: 170px;
+  top: 480px;
+  width: 340px;
   height: 455px;
 }
 
 .B-year {
   color: #d1d1d1;
-  font-family: "Funnel Display", sans-serif;
+  font-family: "Space Mono", sans-serif;
   position: absolute;
   line-height: 130px;
   right: 30px;
