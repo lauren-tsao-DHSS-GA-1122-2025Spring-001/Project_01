@@ -2,7 +2,7 @@
 
 ## Deliverables
 - Link to website: Please click [here](https://lauren-tsao-dhss-ga-1122-2025spring-001.github.io/Project_01/)
-- Link to reflection: Please click [here](https://drive.google.com/file/d/1tTZxf6NwUKsme8yVEbJMPV97JcFf8NNJ/view?usp=sharing)
+- Link to reflection: Please click [here](https://drive.google.com/file/d/1uBrpVasuTPaVX0bK6FyYZ-1A0eTLk_Na/view?usp=sharing)
 
 ## Brief
 In this project, you will select a static and/or physical item (such as a printed text, image, document, sculpture, or physical object) and translate it into a digital format. The goal is to explore how digital tools can alter the way we interact with, interpret, and present physical items.
