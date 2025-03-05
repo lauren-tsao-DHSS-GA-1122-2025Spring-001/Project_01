@@ -25,7 +25,6 @@ body {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
-  /* overflow: hidden; */
 }
 
 h1 {
@@ -145,40 +144,42 @@ a {
 }
 
 /* side-B modifications */
-.B_body-text-01 {
-  text-align: justify;
-  position: absolute;
-  left: 200px;
-  top: 270px;
-  width: 310px;
-  height: 210px;
+.side-B {
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
 }
 
-.B_body-text-02 {
-  text-align: justify;
+.B-text {
+  width: 70%;
   position: absolute;
-  left: 250px;
-  top: 430px;
+  justify-content: center;
+  top: 12vw;
+  left: 15vw;
+  color: #d1d1d1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.B_text-01-02 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.B_text-03-04 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.B_body-text-01, .B_body-text-02, .B_body-text-03, .B_body-text-04 {
+  color: #d1d1d1;
+  margin-bottom: 30px;
   width: 300px;
-  height: 210px;
-}
-
-.B_body-text-03 {
-  text-align: justify;
-  position: absolute;
-  right: 240px;
-  top: 270px;
-  width: 320px;
-  height: 455px;
-}
-
-.B_body-text-04 {
-  text-align: justify;
-  position: absolute;
-  right: 170px;
-  top: 480px;
-  width: 340px;
-  height: 455px;
+  z-index: 1;
 }
 
 .B-year {
@@ -189,12 +190,6 @@ a {
   right: 30px;
   bottom: 10%;
   font-size: 130px;
-}
-
-.side-B {
-  width: 100%;
-  height: 100%;
-  opacity: 0%;
 }
 
 /* ANIMATION */
@@ -237,10 +232,9 @@ body:has(.A-year:hover) .bg-color {
 
 /* side-B animation */
 body:has(.B-year:hover) h1 {
-  font-family: "Fungal-Grow400Thickness500, Helvetica";
+  font-family: "Fungal-Grow400Thickness500", Helvetica;
   opacity: 100%;
   color: white;
-  background-color: #151515;
 }
 
 body:has(.B-year:hover) .side-B {
@@ -280,18 +274,7 @@ body:has(.B-year:hover) .A-year {
     font-size: 6em;
     line-height: 1em;
   }
-
-  .original-text {
-    top: 20vw;
-  }
-
-  .A-text {
-    top: 20vw;
-  }
-
-  body {
-    overflow: visible;
-}
+  
 }
 
 @media(max-width: 800px) {
@@ -307,5 +290,17 @@ body:has(.B-year:hover) .A-year {
   .B-year {
     font-size: 5em;
     line-height: 1em;
+  }
+
+  .original-text {
+    top: 20vw;
+  }
+
+  .A-text {
+    top: 20vw;
+  }
+
+  .B-text {
+    top: 20vw;
   }
 }
